@@ -11,3 +11,9 @@ function My_Function() {                          //Defining a function and nami
     document.getElementById("Concatenate").innerHTML = C;
     //Putting the value of the variable into the HTML elementFromPoint with the "Button_Text" id (.innerHTML modifies the content of an HTML element)
 }
+
+function triple(n){
+    comp = n*3;
+    document.getElementById("effect").innerHTML = comp;
+}
+
