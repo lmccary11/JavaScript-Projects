@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Basic Web Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <style></style> <!-- Unless using .css file-->
+		<!-- <link rel="stylesheet" href =".css"> Using .css file-->
+    </head>
+    <body>
+        <h4>Basic HTML Page</h4>
+        <p></p>
+        <p></p>
+            <script src="JS/main.js"></script> <!-- Using .js file-->
+            <p></p>
+        
+        <p id="Morning_Greeting" onclick="get_Date()">Click</p>  <!--Upon clicking the text, 
+            will display a greeting associated with the "Morning_Greeting" id, 
+            according to the "get_Date" function in js-->          
+
+        <p>Write your Age</p> <!--Instruction to input age in box below-->
+        <input id="Age" value=""/>  <!--Creates input box to gather data for function-->
+        <p id="lowAge" onclick="get_lowAge_or_vote()">Click</p> <!--Upon clicking the text, 
+            will display whether or not citizen is old enough to vote, associated with the "lowAge" id, 
+            according to the "get_lowAge_or_vote" function in js-->      
+
+        <p>Pick a number. If its lower than the number I'm thinking, I'll give you a dollar!:</p> 
+        <!--Instruction to input random number in box below-->
+        <input id="A" value=""/><!--Creates input box to gather data for function-->
+        <button id="lower" onclick="get_lower()">Click</button><!--Upon clicking the button, 
+            will display whether or not number picked is lower than number specified in function, associated with the "lowAge" id, 
+            according to the "get_lower" function in js-->
+
+        
+        
+        <button id="time_of_day" onclick="time_function()">Click</button>
+
+
+        
+
+    </body>
+</html>
