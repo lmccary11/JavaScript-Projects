@@ -1,3 +1,17 @@
+function Ride_Function(){                                //Defining a function and naming it
+    var Height, Can_ride;
+    Height = document.getElementById("Height").value;
+    Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
+    document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+}
+
+function Vote_Function(){                                //Defining a function and naming it
+    var Age, Can_vote;
+    Age = document.getElementById("Height").value;
+    Can_vote = (Age < 52) ? "You are too young":"You are old enough";
+    document.getElementById("Ride").innerHTML = Can_vote + " to vote.";
+}
+
 class Vehicle {
     constructor(Make, Model, Year, Color) {
         this.Vehicle_Make = Make;
@@ -17,7 +31,7 @@ function myFunction(){
 }
 
 function count_Function(){
-    document.getElementById("Counting").innerHTML = Count();
+    document.getElementById("Nested_Function").innerHTML = Count();
     function Count(){
         var Starting_point = 9;
         function Plus_one() {Starting_point += 1;}
